@@ -1,0 +1,74 @@
+@keyframes rotate {
+    0% {
+        transform: perspective(100rem) rotateY(0deg);
+    }
+    
+    100% {
+        transform: perspective(100rem) rotateY(360deg);
+    }
+    }
+
+.card__rotate {
+    position: relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+
+
+    &-container1, &-container2,
+    &-container3, &-container4, &-container5, 
+    &-container6, &-container7, &-container8
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    // background-image: url('../../../images/icons/boostrap.png');
+        background-size: cover;
+        background-position: center;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(12rem);
+        box-shadow: .15rem .15rem .2rem rgba($color: rgb(56, 55, 55), $alpha: .6),
+                    -.09rem -.09rem .2rem  rgba(rgb(16, 250, 250), .9);
+    }
+
+    &-container1{
+        background-image: url('../../images/icons/firebase.png');
+    }
+
+    &-container2{
+        background-image: url('../../images/icons/html5.png');
+
+    }
+
+    &-container3{
+        background-image: url('../../images/icons/js.png');
+
+    }
+
+
+    &-container4{
+        background-image: url('../../images/icons/express.png');
+    }
+
+
+    &-container5{
+        background-image: url('../../images/icons/mongodb.png');
+    }
+
+
+    &-container6{
+        background-image: url('../../images/icons/reactjs.png');
+    }
+
+    &-container7{
+        background-image: url('../../images/icons/Redux.png');
+    }
+
+    &-container8{
+        background-image: url('../../images/icons/css.png');
+   }
+}

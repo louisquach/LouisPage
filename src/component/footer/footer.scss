@@ -1,0 +1,36 @@
+.footer_container {
+    position: fixed;
+    bottom: .5rem;
+    right: 50%;
+    transform: translateX(50%);
+    height: 2rem;
+    width: 50rem;
+    text-align: center;
+
+    &-content {
+        position: relative;
+        height: 100%;
+        color: white;
+
+        .copyright {
+            display: inline-block;
+            width: auto;
+            font-size: 1.6rem;
+            margin-right: 2px;
+        }
+
+        .footer-name {
+            display: inline-block;
+            width: auto;
+        }
+
+        &:hover .footer-name {
+            background-color: #17161b;
+            box-shadow: 2px 2px 5px rgba(black, .8);
+            transform: scale(1.1) skewX(-10deg);
+        }
+    }
+    
+   
+}
+

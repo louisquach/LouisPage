@@ -1,0 +1,68 @@
+@keyframes outlineMove {
+    0% {background-position: 0 0;}
+
+    50% {background-position: -400% 0;}
+
+    100% {background-position: 0 0;}
+}
+
+.mainscreen {
+    position: relative;
+    height: 80vh;
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    width: 75%;
+    box-shadow: 1rem 1rem 1.5rem rgba($color: #000000, $alpha: .7);
+    display: flex;
+    text-align: center;
+    margin-right: -5rem;
+    border-radius: 1rem;
+    //overflow: hidden;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg,#fa7d09,  rgb(22, 18, 250),#fa26a0, #fa1616, #79d70f, #ff4301,
+         #f9d56e,#fa26a0,#12cad6,#06623b, #fa1616, #79d70f, #e84a5f,#12cad6, #ff4301);
+        opacity: 1;
+        background-size: 200%;
+        border-radius: 1rem;
+        transition: all .5s;
+        animation: outlineMove  ease-in-out infinite 30s;
+        animation-delay: 2s;
+        filter: blur(5px);
+      }
+
+      &__content {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+
+        &-detail {
+            position: absolute;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            width: 99.5%;
+            height: 99%;
+            border-radius: 1rem;
+            background-image: url('../../images/homebackground.png');
+            background-size: cover;
+            background-position: center;
+            align-self: center;
+            box-shadow: inset .2rem .2rem .7rem rgba($color: rgb(229, 226, 226), $alpha: .4),
+            inset -.2rem -.2rem .7rem rgba($color: rgb(243, 237, 237), $alpha: .4);
+            overflow: hidden;
+        }
+    }
+}

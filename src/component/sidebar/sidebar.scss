@@ -1,0 +1,44 @@
+.sidebar {
+    height: 40%;
+    flex: 0 6%;
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color:#333333;
+        border-radius: 4rem;
+        box-shadow: .3rem .3rem 1rem rgba($color: #1eeef5, $alpha: .6),
+        -.3rem -.3rem 1rem rgba($color: #1eeef5, $alpha: .6);
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            height: 100%;
+            width: 85%;
+            top: 50%;
+            left: 50%;
+            content: '';
+            transform: translate(-50%,-50%);
+            background-color: #363636;
+            z-index: 0;
+            box-shadow: 2px 2px 5px rgba(white, $alpha: .1),
+            -2px -2px 5px rgba(white, $alpha: .1);
+        }
+
+        &-button {
+            display: flex;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            outline: none;
+        }
+    }
+    
+}

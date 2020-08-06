@@ -1,0 +1,30 @@
+.second-slide {
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 80%;
+    align-items: center;
+
+    &-content {
+        width: 100%;
+
+        .reference {
+            width: 70%;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e8ead3;
+        }
+    }
+
+    &-quote {
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #f9fcfb;
+        text-align: start;
+        line-height: 3rem;
+        letter-spacing: .1rem;
+        padding: 2rem;
+    }
+}

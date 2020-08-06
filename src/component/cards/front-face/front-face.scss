@@ -1,0 +1,41 @@
+.card__frontface {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;    
+    box-shadow: inset .1rem .1rem .5rem rgba(white, .3);
+
+
+    &-figure {
+        position: relative;
+        height: 60%;
+        width: 70%;
+        margin: 0 auto;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        text-align: left;    
+        line-height: 5rem;
+        margin-top: 2.5rem;
+        color: white;
+    }
+
+    &-intro {
+        width: 100%;
+        letter-spacing: .2rem;
+        display: block;
+    }
+
+    &-rotate {
+        position: relative;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+    }
+}
